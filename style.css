@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url(./img/bg.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.6)
+  );
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 15px;
+}
+header input {
+  width: 100%;
+  max-width: 200px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 16px 0px 16px 0px;
+  border-bottom: 3px solid #863d01;
+  font-size: 20px;
+  font-weight: 300;
+  transform: 0.2 ease-out;
+}
+header input:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+main {
+  flex: 1 1 100%;
+  padding: 25px 25px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.location .city {
+  font-family: "Pacifico", cursive;
+  color: white;
+  font-size: 37px;
+  font-weight: 200;
+  margin-bottom: 5px;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.3);
+}
+.location .date {
+  color: white;
+  font-size: 26px;
+  font-weight: 250;
+  letter-spacing: 2px;
+  font-family: "Raleway", sans-serif;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.4);
+}
+.forecast .temp {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 150px;
+  font-weight: 900;
+  margin: 30px 0px;
+  text-shadow: 3px 4px rgba(0, 0, 0, 0.4);
+}
+.forecast .temp span {
+  font-weight: 500;
+}
+.forecast .fore {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+}
+.forecast .hi-low {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
